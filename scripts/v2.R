@@ -14,9 +14,10 @@ library(scales)
 library(dplyr)
 library(stringr)
 
-
 ## read input file ####
-df.original = read.csv(file="/mnt/r.makeOver.2016Mar28/data/Sugar Tax.csv", stringsAsFactors = FALSE)
+# please check the file path
+my.path = "/mnt/h/r.makeOver.2016Mar28/data/Sugar Tax.csv"
+df.original = read.csv(file=my.path, stringsAsFactors = FALSE)
 
 ## basic manipulation ####
 df.1 = df.original
@@ -45,7 +46,10 @@ levels(df.1$Sugar.Source) <- gsub(" ", "\n", levels(df.1$Sugar.Source))
 levels(df.1$Age.Group)
 df.1$Age.Group <- factor(df.1$Age.Group, levels(df.1$Age.Group)[c(3,4,5,1,2)])
 levels(df.1$Age.Group)                      
-  
+
+levels(df.1$Sugar.Source)
+df.1$Sugar.Source <- factor(df.1$Sugar.Source, levels(df.1$Sugar.Source)[c(2,3,5,6,4,1)])  
+levels(df.1$Sugar.Source)
 
 ## basic graph ####
 g1 <- ggplot(df.1, aes(x=Sugar.Source, y=Amount, fill=Sugar.Source))
@@ -80,12 +84,8 @@ g4 <- g4 + theme(panel.grid.minor.x=element_blank(),
 
 g4 <- g4 + theme(panel.grid.minor.y=element_blank())
 
-# Change font options:
-# X-axis label: bold, red, and 20 points
-# X-axis tick marks: rotate 90 degrees CCW, move to the left a bit (using vjust,
-#   since the labels are rotated), and 16 points
-# bp + theme(axis.title.x = element_text(face="bold", colour="#990000", size=20),
-#g4 <- g4 + theme(axis.text.x  = element_text(angle=45, vjust=0.5, size=5))
+g4 <- g4 + theme(plot.title = element_text(face="bold", color = "black", size=18))
 
+g4
 
 
