@@ -1,0 +1,28 @@
+Age Group,Sugar Source,Amount
+Children 1.5-3,Soft Drinks,27%
+Children 1.5-3,Milk Products,18%
+Children 1.5-3,"Cereals, Cakes, Biscuits",25%
+Children 1.5-3,"Sugar, Sweets, Jams",19%
+Children 1.5-3,Other,11%
+Children 4-10,Soft Drinks,30%
+Children 4-10,Milk Products,12%
+Children 4-10,"Cereals, Cakes, Biscuits",29%
+Children 4-10,"Sugar, Sweets, Jams",22%
+Children 4-10,Other,7%
+Teenagers 11-18,Soft Drinks,40%
+Teenagers 11-18,Milk Products,10%
+Teenagers 11-18,"Cereals, Cakes, Biscuits",22%
+Teenagers 11-18,"Sugar, Sweets, Jams",21%
+Teenagers 11-18,Other,7%
+Adults 19-64,Soft Drinks,25%
+Adults 19-64,Milk Products,6%
+Adults 19-64,"Cereals, Cakes, Biscuits",21%
+Adults 19-64,Alcohol,10%
+Adults 19-64,"Sugar, Sweets, Jams",26%
+Adults 19-64,Other,12%
+Adults 65+,Soft Drinks,16%
+Adults 65+,Milk Products,8%
+Adults 65+,"Cereals, Cakes, Biscuits",29%
+Adults 65+,Alcohol,6%
+Adults 65+,"Sugar, Sweets, Jams",26%
+Adults 65+,Other,15%
